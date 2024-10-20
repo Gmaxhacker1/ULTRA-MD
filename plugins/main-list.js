@@ -8,7 +8,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         : m.sender
   if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
 
-  let pp = './assets/qasim.jpg'
+  let pp = './assets/ultra.jpg'
   let more = String.fromCharCode(8206)
   let readMore = more.repeat(850)
 
@@ -54,460 +54,512 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         'aimenu* - Your Personal Artificial Intelligence Copilots.\n\n' +
         '🎧 *' +
         usedPrefix +
-        'aeditor* - Tune The Mp3/Audio As You Wish.'
+        'aeditor* - Tune The Mp3/Audio As You Wish.\n\n' +
+         '🎉 *' +
+        usedPrefix +
+        'animemenu* - Animated Images,Stickers and Videos.\n\n' +
+         '🪁 *' +
+        usedPrefix +
+        'infoanime* - Full Information About Animes Like imdb.' 
         break
 
     case 'botmenu':
       lkr = `
 ╭───『 *Bot* 』─❍
-◈ .quran
-◈ .bible
-◈ .gita
-◈ .ping
-◈ .uptime
-◈ .alive
-◈ .anticall
-◈ .chatbot
-◈ .bot
-◈ .owner
-◈ .script
-◈ .test
-◈ .runtime
-◈ .info
-◈ .mrcs
-◈ .bebots
-◈ .jadibot
-◈ .serbot
-◈ .donate
-◈ .groups
-◈ .blocklist
-◈ .listprem
+◈ •quran
+◈ •autoreact
+◈ •bible
+◈ •gita
+◈ •ping
+◈ •uptime
+◈ •alive
+◈ •language
+◈ •server
+◈ •rentbot
+◈ •listrent
+◈ •stoprent
+◈ •botinfo
+◈ •owner
+◈ •script
+◈ •speedtest
+◈ •runtime
+◈ •menu
+◈ •menu2
+◈ •menu3
+◈ •menu4
+◈ •donate
+◈ •groups
+◈ •blocklist
+◈ •listprem
+◈ •list
+◈ •mrcs
 ◈ © GlobalTechInfo
 ╰─────────❍` // Your bot menu message here
       break
       case 'aimenu':
       lkr=`
  ╭───『 *AI* 』─❍
- ◈ .lexica
- ◈ .chatgpt
- ◈ .gitagpt
- ◈ .gptpro
- ◈ .gpt4
- ◈ .civitai
- ◈ .blackpink
- ◈ .image
- ◈ .dalle
- ◈ .bro
- ◈ .ai
+ ◈ •lexica
+ ◈ •chatgpt
+ ◈ •gitagpt
+ ◈ •darkgpt
+ ◈ •gpt4
+ ◈ •civitai
+ ◈ •blackpink
+ ◈ •image
+ ◈ •dalle
+ ◈ •bro
+ ◈ •ai
  ╰─────────❍` //
  break
     case 'ownermenu':
       lkr = `
 ╭───『 *Owner* 』─❍
-◈ .enable
-◈ .disable
-◈ .banchat
-◈ .unbanchat
-◈ .banuser
-◈ .unbanuser
-◈ .broadcast
-◈ .broadcastgc
-◈ .readviewonce
-◈ .setprivacy
-◈ .join
-◈ .setppbot
-◈ .setprefix
-◈ .resetprefix
-◈ .getfile
-◈ .getplugin
-◈ .plugins
-◈ .install
-◈ .savecontact
-◈ .fakereply
-◈ .delcmd
-◈ .listcmd
-◈ .getmsg
-◈ .addprem
-◈ .delprem
-◈ .addsudo
-◈ .delsudo
-◈ .addowner
-◈ .delowner
-◈ .allvars
-◈ .broadcast
-◈ .fullpp
-◈ .inspect
-◈ .cleartmp
-◈ .restart
-◈ .savefile
-◈ .getfile
-◈ .logout
-◈ .unban
-◈ .ban
-◈ .afk
-◈ .save
-◈ .update
-◈ .allow
-◈ .listban
+◈ •enable
+◈ •autoreact
+◈ •banchat
+◈ •unbanchat
+◈ •banuser
+◈ •unbanuser
+◈ •broadcast
+◈ •broadcastgc
+◈ •readviewonce
+◈ •setprivacy
+◈ •setppbot
+◈ •setprefix
+◈ •resetprefix
+◈ •getfile
+◈ •getplugin
+◈ •plugins
+◈ •install
+◈ •savecontact
+◈ •fakereply
+◈ •delcmd
+◈ •listcmd
+◈ •getmsg
+◈ •addprem
+◈ •delprem
+◈ •addsudo
+◈ •delsudo
+◈ •addowner
+◈ •delowner
+◈ •allvars
+◈ •broadcast
+◈ •fullpp
+◈ •inspect
+◈ •cleartmp
+◈ •clearchat
+◈ •restart
+◈ •savefile
+◈ •getfile
+◈ •logout
+◈ •unban
+◈ •ban
+◈ •afk
+◈ •save
+◈ •allow
+◈ •listban
+◈ •join
 ╰─────────❍` //
       break
     case 'groupmenu':
       lkr = `
 ╭───『 *Group* 』─❍
-◈ .kick
-◈ .promote
-◈ .demote
-◈ .groupinfo
-◈ .resetlink
-◈ .antilink
-◈ .link
-◈ .setpp
-◈ .setname
-◈ .setdesc
-◈ .setwelcome
-◈ .setbye
-◈ .hidetag
-◈ .tagall
-◈ .totag
-◈ .notify
-◈ .delwarn
-◈ .warn
-◈ .unwarn
-◈ .warns
-◈ .add
-◈ .delete
-◈ .group
-◈ .enable
-◈ .disable
-◈ .toxic
-◈ .ship
-◈ .register
-◈ .unreg
-◈ .mysn
-◈ .poll
-◈ .simulate
-◈ .admins
+◈ •kick
+◈ •promote
+◈ •demote
+◈ •groupinfo
+◈ •resetlink
+◈ •antilink
+◈ •link
+◈ •setpp
+◈ •setname
+◈ •setdesc
+◈ •setwelcome
+◈ •setbye
+◈ •hidetag
+◈ •tagall
+◈ •totag
+◈ •notify
+◈ •delwarn
+◈ •warn
+◈ •unwarn
+◈ •warns
+◈ •add
+◈ •delete
+◈ •group
+◈ •enable
+◈ •disable
+◈ •toxic
+◈ •ship
+◈ •register
+◈ •unreg
+◈ •mysn
+◈ •poll
+◈ •simulate
+◈ •admins
 ╰─────────❍` //
       break
     case 'downloadermenu':
     case 'dlmenu':
       lkr = `
 ╭───『 *Download* 』─❍
-◈ .video
-◈ .itunes
-◈ .play
-◈ .play2
-◈ .play3
-◈ .apk
-◈ .mega
-◈ .yts
-◈ .yta
-◈ .ytv
-◈ .ytmp3 
-◈ .ytmp4
-◈ .gimage
-◈ .gdrive
-◈ .gitclone 
-◈ .twitter
-◈ .tiktokstalk
-◈ .insta
-◈ .igstalk
-◈ .facebook
-◈ .swdl
-◈ .dlstatus
+◈ •likee
+◈ •pinterest
+◈ •threads
+◈ •capcut
+◈ •itunes
+◈ •play
+◈ •play2
+◈ •play7
+◈ •mega
+◈ •yts
+◈ •ytmp3 
+◈ •ytmp4
+◈ •gimage
+◈ •gdrive
+◈ •gitclone 
+◈ •twitter
+◈ •tiktok
+◈ •tiktokstalk
+◈ •insta
+◈ •igstalk
+◈ •facebook
+◈ •swdl
+◈ •dlstatus
 ╰─────────❍` //
       break
     case 'economymenu':
       lkr = `
 ╭───『 *Economy* 』─❍
-◈ .claim/daily
-◈ .weekly
-◈ .monthly
-◈ .leaderboard
-◈ .bet
-◈ .heal
-◈ .craft
-◈ .balance
-◈ .shop
-◈ .sell
-◈ .adventure
-◈ .opencrate
-◈ .mine
-◈ .work
-◈ .transfer
-◈ .todiamond
-◈ .tomoney
+◈ •claim/daily
+◈ •weekly
+◈ •monthly
+◈ •leaderboard
+◈ •bet
+◈ •heal
+◈ •craft
+◈ •balance
+◈ •shop
+◈ •sell
+◈ •adventure
+◈ •opencrate
+◈ •mine
+◈ •work
+◈ •transfer
+◈ •todiamond
+◈ •tomoney
 ╰────────❍ ` //
       break
     case 'funmenu':
       lkr = `
 ╭───『 *Fun* 』─❍
-◈ .character
-◈ .truth
-◈ .dare
-◈ .flirt
-◈ .gay
-◈ .shayeri
-◈ .ship
-◈ .waste
-◈ .alexa
-◈ .simpcard
-◈ .hornycard
-◈ .ytcomment
-◈ .stupid
-◈ .lolicon
+◈ •character
+◈ •truth
+◈ •dare
+◈ •flirt
+◈ •gay
+◈ •shayeri
+◈ •ship
+◈ •waste
+◈ •alexa
+◈ •simpcard
+◈ •hornycard
+◈ •ytcomment
+◈ •stupid
+◈ •lolicon
 ╰─────────❍` //
       break
     case 'animemenu':
       lkr = `
 ╭───『 *Anime* 』─❍
-◈ .waifu
-◈ .neko
-◈ .loli
-◈ .couplepp
-◈ .toanime
-◈ .naruto
-◈ .itachi
-◈ .akira
-◈ .asuna
-◈ .akiyama
-◈ .boruto
-◈ .hornycard
-◈ .ayuzawa
-◈ .anna
-◈ .chiho
-◈ .chitoge
-◈ .deidara
-◈ .erza
-◈ .elaina
-◈ .emilia
-◈ .hestia
-◈ .hinata
-◈ .inori
-◈ .isuzu
-◈ .kagura
-◈ .kaori
-◈ .keneki
-◈ .kurumi
-◈ .madara
-◈ .mikasa
-◈ .miku
-◈ .minato
-◈ .nezuko
-◈ .sagiri
-◈ .sasuke
-◈ .sakura
-◈ .kotori
+◈ •waifu
+◈ •neko
+◈ •loli
+◈ •couplepp
+◈ •toanime
+◈ •naruto
+◈ •itachi
+◈ •akira
+◈ •asuna
+◈ •akiyama
+◈ •boruto
+◈ •hornycard
+◈ •ayuzawa
+◈ •anna
+◈ •chiho
+◈ •chitoge
+◈ •deidara
+◈ •erza
+◈ •elaina
+◈ •emilia
+◈ •hestia
+◈ •hinata
+◈ •inori
+◈ •isuzu
+◈ •kagura
+◈ •kaori
+◈ •keneki
+◈ •kurumi
+◈ •madara
+◈ •mikasa
+◈ •miku
+◈ •minato
+◈ •nezuko
+◈ •sagiri
+◈ •sasuke
+◈ •sakura
+◈ •kotori
+╰─────────❍` //
+      break
+      case 'infoanime':
+      lkr = `
+╭───『 *Info Anime* 』─❍
+◈ •anime waifu
+◈ •anime neko
+◈ •anime loli
+◈ •anime naruto
+◈ •anime itachi
+◈ •anime akira
+◈ •anime asuna
+◈ •anime akiyama
+◈ •anime boruto
+◈ •anime ayuzawa
+◈ •anime anna
+◈ •anime chiho
+◈ •anime chitoge
+◈ •anime deidara
+◈ •anime erza
+◈ •anime elaina
+◈ •anime emilia
+◈ •anime hestia
+◈ •anime hinata
+◈ •anime inori
+◈ •anime isuzu
+◈ •anime kagura
+◈ •anime kaori
+◈ •anime keneki
+◈ •anime kurumi
+◈ •anime madara
+◈ •anime mikasa
+◈ •anime miku
+◈ •anime minato
+◈ •anime nezuko
+◈ •anime sagiri
+◈ •anime sasuke
+◈ •anime sakura
+◈ •anime kotori
 ╰─────────❍` //
       break
     case 'gamemenu':
       lkr = `
 ╭───『 *Game* 』─❍
-◈ .tictactoe
-◈ .delttt
-◈ .chess
-◈ .math
-◈ .math answer
-◈ .ppt
-◈ .slot
-◈ .casino
-◈ .guessflag
-◈ .fhint
+◈ •tictactoe
+◈ •delttt
+◈ •chess
+◈ •math
+◈ •math answer
+◈ •ppt
+◈ •slot
+◈ •casino
+◈ •guessflag
+◈ •fhint
 ╰─────────❍` //
       break
     case 'stickermenu':
       lkr = `
 ╭───『 *Sticker* 』─❍
-◈ .sticker
-◈ .take
-◈ .scircle
-◈ .smaker
-◈ .sremovebg
-◈ .smeme
-◈ .trigger
-◈ .getsticker
-◈ .tgsticker
-◈ .emojimix
-◈ .toimg
-◈ .tovid
-◈ .ttp
-◈ .attp
-◈ .attp2
-◈ .attp3
+◈ •sticker
+◈ •take
+◈ •scircle
+◈ •smaker
+◈ •sremovebg
+◈ •smeme
+◈ •trigger
+◈ •getsticker
+◈ •tgsticker
+◈ •emojimix
+◈ •toimg
+◈ •tovid
+◈ •ttp
+◈ •attp
+◈ •attp2
+◈ •attp3
+◈ Would Not Work Without bg Key
 ╰─────────❍` //
       break
     case 'toolmenu':
       lkr = `
 ╭───『 *Tools* 』─❍
-◈ .autosticker
-◈ .tgsticker
-◈ .topdf
-◈ .whatmusic
-◈ .filelength
-◈ .tempmail
-◈ .checkmail
-◈ .course
-◈ .calc
-◈ .google
-◈ .imdb
-◈ .reddit
-◈ .lyrics
-◈ .readmore
-◈ .ssweb
-◈ .carbon
-◈ .element
-◈ .translate
-◈ .tourl
-◈ .trace
-◈ .wikipedia
-◈ .nowa
-◈ .qrmaker
-◈ .readqr
-◈ .fancy
-◈ .weather
-◈ .tocartoon
-◈ .quote
-◈ .technews
-◈ .define
-◈ .itunes
-◈ .pokedex
-◈ .removebg
-◈ .tinyurl/shorturl
-◈ .readvo
-◈ .true
-◈ .wa
-◈ .voz
+◈ •autosticker
+◈ •tgsticker
+◈ •topdf
+◈ •whatmusic
+◈ •filelength
+◈ •tempmail
+◈ •checkmail
+◈ •course
+◈ •calc
+◈ •google
+◈ •imdb
+◈ •reddit
+◈ •lyrics
+◈ •readmore
+◈ •ssweb
+◈ •carbon
+◈ •element
+◈ •translate
+◈ •tourl
+◈ •trace
+◈ •wikipedia
+◈ •nowa
+◈ •qrmaker
+◈ •readqr
+◈ •fancy
+◈ •weather
+◈ •tocartoon
+◈ •quote
+◈ •technews
+◈ •define
+◈ •itunes
+◈ •pokedex
+◈ •removebg
+◈ •tinyurl/shorturl
+◈ •readvo
+◈ •true
+◈ •wa
+◈ •voz
 ╰─────────❍` //
 break
 case 'aeditor':
 lkr=`
 ╭───『 *Audio* 』─❍
-◈ .bass
-◈ .blown
-◈ .deep
-◈ .earrape
-◈ .fast
-◈ .nightcore
-◈ .reverse
-◈ .robot
-◈ .slow
-◈ .smooth
-◈ .tupai
-◈ .squirrel
-◈ .chipmunk
+◈ •bass
+◈ •blown
+◈ •deep
+◈ •earrape
+◈ •fast
+◈ •nightcore
+◈ •reverse
+◈ •robot
+◈ •slow
+◈ •smooth
+◈ •tupai
+◈ •squirrel
+◈ •chipmunk
 ╰─────────❍` //
       break
     case 'nsfwmenu': 
       lkr = `
   ╭───『 *Nsfw* 』─❍
-  ◈ .genshin
-  ◈ .swimsuit
-  ◈ .schoolswimsuit
-  ◈ .white
-  ◈ .barefoot
-  ◈ .touhou
-  ◈ .gamecg
-  ◈ .hololive
-  ◈ .uncensored
-  ◈ .sunglasses
-  ◈ .glasses
-  ◈ .weapon
-  ◈ .shirtlift
-  ◈ .chain
-  ◈ .fingering
-  ◈ .flatchest
-  ◈ .torncloth
-  ◈ .bondage
-  ◈ .demon
-  ◈ .wet
-  ◈ .pantypull
-  ◈ .headdress
-  ◈ .headphone
-  ◈ .tie
-  ◈ .anusview
-  ◈ .shorts
-  ◈ .stokings
-  ◈ .topless
-  ◈ .beach
-  ◈ .bunnygirl
-  ◈ .bunnyear
-  ◈ .idol
-  ◈ .vampire
-  ◈ .gun
-  ◈ .maid
-  ◈ .bra
-  ◈ .nobra
-  ◈ .bikini
-  ◈ .whitehair
-  ◈ .blonde
-  ◈ .pinkhair
-  ◈ .bed
-  ◈ .ponytail
-  ◈ .nude
-  ◈ .dress
-  ◈ .underwear
-  ◈ .foxgirl
-  ◈ .uniform
-  ◈ .skirt
-  ◈ .sex
-  ◈ .sex2
-  ◈ .sex3
-  ◈ .breast
-  ◈ .twintail
-  ◈ .spreadpussy
-  ◈ .tears
-  ◈ .seethrough
-  ◈ .breasthold
-  ◈ .drunk
-  ◈ .fateseries
-  ◈ .spreadlegs
-  ◈ .openshirt
-  ◈ .headband
-  ◈ .food
-  ◈ .close
-  ◈ .tree
-  ◈ .nipples
-  ◈ .erectnipples
-  ◈ .horns
-  ◈ .greenhair
-  ◈ .wolfgirl
-  ◈ .catgirl
-  ◈ .nsfw
-  ◈ .ass
-  ◈ .boobs
-  ◈ .lesbian
-  ◈ .pussy
-  ◈ .pack
-  ◈ .xvid
-  ◈ .xnxx
+  ◈ •genshin
+  ◈ •swimsuit
+  ◈ •schoolswimsuit
+  ◈ •white
+  ◈ •barefoot
+  ◈ •touhou
+  ◈ •gamecg
+  ◈ •hololive
+  ◈ •uncensored
+  ◈ •sunglasses
+  ◈ •glasses
+  ◈ •weapon
+  ◈ •shirtlift
+  ◈ •chain
+  ◈ •fingering
+  ◈ •flatchest
+  ◈ •torncloth
+  ◈ •bondage
+  ◈ •demon
+  ◈ •wet
+  ◈ •pantypull
+  ◈ •headdress
+  ◈ •headphone
+  ◈ •tie
+  ◈ •anusview
+  ◈ •shorts
+  ◈ •stokings
+  ◈ •topless
+  ◈ •beach
+  ◈ •bunnygirl
+  ◈ •bunnyear
+  ◈ •idol
+  ◈ •vampire
+  ◈ •gun
+  ◈ •maid
+  ◈ •bra
+  ◈ •nobra
+  ◈ •bikini
+  ◈ •whitehair
+  ◈ •blonde
+  ◈ •pinkhair
+  ◈ •bed
+  ◈ •ponytail
+  ◈ •nude
+  ◈ •dress
+  ◈ •underwear
+  ◈ •foxgirl
+  ◈ •uniform
+  ◈ •skirt
+  ◈ •sex
+  ◈ •sex2
+  ◈ •sex3
+  ◈ •breast
+  ◈ •twintail
+  ◈ •spreadpussy
+  ◈ •tears
+  ◈ •seethrough
+  ◈ •breasthold
+  ◈ •drunk
+  ◈ •fateseries
+  ◈ •spreadlegs
+  ◈ •openshirt
+  ◈ •headband
+  ◈ •food
+  ◈ •close
+  ◈ •tree
+  ◈ •nipples
+  ◈ •erectnipples
+  ◈ •horns
+  ◈ •greenhair
+  ◈ •wolfgirl
+  ◈ •catgirl
+  ◈ •nsfw
+  ◈ •ass
+  ◈ •boobs
+  ◈ •lesbian
+  ◈ •pussy
+  ◈ •pack
+  ◈ •xvid
+  ◈ •xnxx
   ╰─────────❍` //
       break
     case 'logomenu':
       lkr = `
   ╭───『 *Maker* 』─❍
-  ◈ .blur
-  ◈ .difuminar2
-  ◈ .hornycard
-  ◈ .hornylicense
-  ◈ .gfx1
-  ◈ .gfx2
-  ◈ .gfx3
-  ◈ .gfx4
-  ◈ .gfx5
-  ◈ .gfx6
-  ◈ .gfx7
-  ◈ .gfx8
-  ◈ .gfx9
-  ◈ .gfx10
-  ◈ .gfx11
-  ◈ .gfx12
-  ◈ .simpcard
-  ◈ .itssostupid
-  ◈ .iss
-  ◈ .stupid
-  ◈ .tweet <comment>
-  ◈ .lolicon
-  ◈ .ytcomment <comment>
+  ◈ •blur
+  ◈ •difuminar2
+  ◈ •hornycard
+  ◈ •hornylicense
+  ◈ •gfx1
+  ◈ •gfx2
+  ◈ •gfx3
+  ◈ •gfx4
+  ◈ •gfx5
+  ◈ •gfx6
+  ◈ •gfx7
+  ◈ •gfx8
+  ◈ •gfx9
+  ◈ •gfx10
+  ◈ •gfx11
+  ◈ •gfx12
+  ◈ •simpcard
+  ◈ •itssostupid
+  ◈ •iss
+  ◈ •stupid
+  ◈ •tweet <comment>
+  ◈ •lolicon
+  ◈ •ytcomment <comment>
   ╰─────────❍` //
       break
     default:
@@ -525,6 +577,7 @@ handler.help = [
   'aimenu',
   'animemenu',
   'aeditor',
+  'infoanime',
   'botmenu',
   'ownermenu',
   'groupmenu',
@@ -544,6 +597,7 @@ handler.command = [
   'aimenu',
   'animemenu',
   'aeditor',
+  'infoanime',
   'botmenu',
   'ownermenu',
   'groupmenu',

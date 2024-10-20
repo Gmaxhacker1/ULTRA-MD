@@ -20,7 +20,7 @@ let handler = async (m, { conn, usedPrefix, command}) => {
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let pp = './assets/qasim.jpg'
+let pp = './assets/ultra.jpg'
 let user = global.db.data.users[who]
 let { name, exp, diamond, lastclaim, registered, regTime, age, level, role, warn } = global.db.data.users[who]
 let { min, xp, max } = xpRange(user.level, global.multiplier)
@@ -43,27 +43,28 @@ let str = `
 
 乂─『 *INFO*』─乂 
 
-┏━⟪ *MENU2* ⟫━⦿
-┃• Economymenu
-┃• Groupmenu
-┃• Makermenu
-┃• Ownermenu
-┃• Stickermenu
-┃• Tools Menu
-┃• Gamemenu
-┃• Groupmenu
-┃• Logomenu
-┃• Setprivacy
-┃• BotMenu
-┃• DlMenu
-┃• Enable
-┃• Aimenu
-┃• Aeditor
-┃• Play3
-┃• Menu
-┃• Menu3
-┃• List
-┗━━━━━━━━━━━⦿
+◈┏━⟪ *MENU2* ⟫━⦿
+◈┃• Groupmenu
+◈┃• Animemenu
+◈┃• Infoanime
+◈┃• Makermenu
+◈┃• Ownermenu
+◈┃• Stickermenu
+◈┃• Toolsmenu
+◈┃• Infoanime
+◈┃• Logomenu
+◈┃• Setprivacy
+◈┃• Botmenu
+◈┃• Dlmenu
+◈┃• Enable
+◈┃• Aimenu
+◈┃• Aeditor
+◈┃• Play3
+◈┃• Menu
+◈┃• Menu3
+◈┃• Menu4
+◈┃• List
+◈┗━♪♪━★━☆━⦿
 
 © GlobalTechInfo
 
