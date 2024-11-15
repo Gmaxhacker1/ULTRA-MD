@@ -8,13 +8,14 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         : m.sender
   if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
 
-  let pp = './assets/Ultra.jpg'
+  let pp = './assets/B.jpg'
   let more = String.fromCharCode(8206)
   let readMore = more.repeat(850)
 
   let lkr
   switch (command) {
-    case 'list':
+    case 'listmenu':
+    case 'menulist':
       lkr ='*Get ready for the ride, here are your ticket options:*\n\n' +
         '🌅 *' +
         usedPrefix +
@@ -107,7 +108,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ •groups
 ◈ •blocklist
 ◈ •listprem
-◈ •list
+◈ •listmenu
 ◈ •mrcs
 ◈ © GlobalTechInfo
 ╰─────────❍` // Your bot menu message here
@@ -251,6 +252,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       lkr = `
 ╭───『 *Group* 』─❍
 ◈ •kick
+◈ •wyr
 ◈ •promote
 ◈ •demote
 ◈ •groupinfo
@@ -725,7 +727,8 @@ lkr=`
 }
 
 handler.help = [
-  'list',
+  'listmenu',
+  'menulist',
   'aimenu',
   'animereactions',
   'reactions',
@@ -757,7 +760,8 @@ handler.help = [
 ]
 handler.tags = ['main']
 handler.command = [
-  'list',
+  'listmenu',
+  'menulist',
   'aimenu',
   'animereactions',
   'reactions',
